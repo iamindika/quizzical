@@ -2,13 +2,44 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 16px;
+}
+/* Typography */
 body {
   margin: 0;
   background-color: #F5F7FB;
-  font: 500 16px "Inter", sans-serif;
+  font: 500 1rem "Inter", sans-serif;
   color: #293264;
 }
 
+.intro-title {
+  margin: 0;
+  font: 700 2.5rem "Karla", sans-serif;
+}
+
+.intro-title,
+.intro-desc {
+  text-align: center;
+}
+
+.intro-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 1em;
+  background-color: #4D5B9E;
+  font: 500 1rem "Inter", sans-serif;
+  color: #F5F7FB;
+}
+
+/* Reusable Styles */
+.container {
+  width: 75%;
+}
+
+/* General Styles */
 #root {
   position: relative;
   display: flex;
@@ -28,4 +59,8 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.intro-desc {
+  margin: .75em 0 2.75em;
 }

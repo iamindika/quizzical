@@ -1,5 +1,5 @@
 const Intro = ({ onStart }) => (
-  <main className="intro">
+  <main className="intro container">
     <h1 className="intro-title">Quizzical</h1>
     <p className="intro-desc">Test your knowledge in various categories, with varying degrees of difficulty!</p>
     <button 
