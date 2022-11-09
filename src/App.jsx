@@ -1,9 +1,18 @@
+import { useState } from "react";
+import Intro from "./components/Intro";
 import blueBlob from "./assets/blue-blob.png";
 import yellowBlob from "./assets/yellow-blob.png";
 
 function App() {
+  const [ startQuiz, setStartQuiz ] = useState(false);
+
   return (
-    <main className="main">
+    <>
+      { startQuiz 
+        ? null
+        : (<Intro 
+            onStart={() => setStartQuiz(true)} 
+          />)}
       <img 
         className="blob--left"
         src={blueBlob}
@@ -14,8 +23,7 @@ function App() {
         src={yellowBlob}
         alt=""
       />
-      Quizzical
-    </main>
+    </>
   )
 }
 

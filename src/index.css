@@ -9,8 +9,12 @@ body {
   color: #293264;
 }
 
-.main {
+#root {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
