@@ -4,5 +4,24 @@
 
 body {
   margin: 0;
-  color: hotpink;
+  background-color: #F5F7FB;
+  font: 500 16px "Inter", sans-serif;
+  color: #293264;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+}
+
+.blob--left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.blob--right {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
