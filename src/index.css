@@ -34,6 +34,12 @@ body {
   color: #F5F7FB;
 }
 
+.intro-btn:focus,
+.intro-btn:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 /* Reusable Styles */
 .container {
   width: 75%;
