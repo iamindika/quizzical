@@ -40,19 +40,35 @@ body {
   opacity: 0.5;
 }
 
-/* Reusable Styles */
-.container {
-  width: 75%;
+.question { 
+  margin: 0;
+  font: 700 1rem "Karla", sans-serif;
 }
 
+.answer-btn {
+  border: 0.7px solid #4D5B9E;
+  border-radius: 8px;
+  padding: .25em .5em;
+  background-color: #F5F7FB;
+  font: 400 0.8rem "Inter", sans-serif;
+  color: #293264;
+}
+
+/* Reusable Styles */
+
+
 /* General Styles */
-#root {
+.wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.intro {
+  width: 75%;
 }
 
 .blob--left {
@@ -71,7 +87,13 @@ body {
   margin: .75em 0 2.75em;
 }
 
-.trivia-list {
+.trivia-list,
+.answer-list {
   padding: 0;
   list-style-type: none;
+}
+
+.answer-list {
+  display: flex;
+  flex-wrap: wrap;
 }
